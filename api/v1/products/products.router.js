@@ -49,6 +49,7 @@ router.get('/', function(req, res) {
   }
 });
 
+// Effective APIs /api/v1/products/:productCode/reviews
 router.post('/:productCode/reviews', function(req, res) {
   try {
     let reviewObj = req.body;

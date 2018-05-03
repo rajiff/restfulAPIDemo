@@ -1,6 +1,9 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const config = require('./appconfig');
+
+console.log('Config value for mongo ', config.MONGO_URL);
 
 const swaggerUI = require('swagger-ui-express');
 
